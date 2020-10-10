@@ -1,0 +1,39 @@
+#seo
+title: 'Upbike'
+description: 'Randonnée à vélo, voyage, écomobilité, smartcity, transport urbain, remorque pour vélo, éco-conception, durabilité, sur mesure, recyclable & made in France.'
+
+#informations de contact
+email: teeknoo@gmail.com
+phone: "+33 768360340"
+
+#uncomment pour l'utilisation en localhost
+baseurl: ""
+url: ""
+
+#uncomment pour l'utilisation sur github
+#baseurl: ""
+#url: ""
+
+#réseaux sociaux
+facebook_username:
+twitter_username:
+github_username: upbike
+instagram_username:
+
+#ouverture
+semaine: 10:00 – 22:00
+weekend: Fermé
+
+#localisation
+googlemap: 'https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Coll%C3%A8ge%20L%C3%A9onard%20De%20Vinc%20Bouff%C3%A9mont+ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed'
+adresse: 11 Rue Jean-Baptiste Clément
+ville: Bouffémont
+
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

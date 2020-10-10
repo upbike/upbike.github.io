@@ -1,0 +1,32 @@
+---
+layout: default
+title: Accueil
+image: img/social.png
+---
+	<!-- Hero Section end -->
+	<section class="hero-section">
+		<div class="pana-accordion" id="accordion">
+    		<div class="pana-accordion-wrap">
+
+				{% for post in site.posts %}
+				{% if post.tags contains "vedette" %}
+				{% if post.type contains "interne" %}<div class="pana-accordion-item set-bg" data-setbg="{{site.url}}/{{post.image}}">{%endif%}
+				{% if post.type contains "externe" %}<div class="pana-accordion-item set-bg" data-setbg="{{post.image}}">{%endif%}
+					<div class="pa-text">
+						{% for tag in site.tags %}
+						<div class="pa-tag">{{tag[0]}}</div>
+						{% endfor %}
+						<h2>{{post.title}}</h2>
+						<div class="pa-author">
+							<img src="{{post.img_author}}" alt="">
+							<h4>{{post.author}}</h4>
+						</div>
+					</div>
+				</div>
+				{% endif %}
+  			{% endfor %}
+
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section end -->

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  {% include head.html %}
+  </head>
+  <body>
+  {% include preloader.html %}
+
+  {% include menu.html %}
+
+  <!-- Blog Section end -->
+  <section class="blog-details">
+    <div class="container">
+      <div class="single-blog-page">
+        <div class="blog-metas">
+          <div class="blog-meta">{{ page.date | date: '%d %b %Y' }} · {% include read-time.html %}</div>
+        </div>
+        <h2>{{page.title}}</h2>
+        <div class="blog-thumb">
+        {{content}}
+      </div>
+    </div>
+  </section>
+  <!-- Blog Section end -->
+
+  {% include script.html %}
+  </body>
+</html>

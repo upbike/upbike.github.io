@@ -1,0 +1,45 @@
+---
+layout: default
+image: img/social.png
+title: Nos Photos
+permalink: /gallery/
+---
+
+	<!-- Gallery Section end -->
+	<section class="gallery-section">
+		<div class="gallery-header">
+			<h4>Nos Photos</h4>
+			<ul class="gallery-filter">
+				<li class="filter all active" data-filter="*">Toutes</li>
+				{% for category in site.categories %}
+				<li class="filter" data-filter=".{{category[0]}}">{{category[0]}}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="nice-scroll">
+			<div class="gallery-warp">
+				<div class="grid-sizer"></div>
+
+				{% for post in site.posts %}
+				<div class="gallery-item gi-big {{post.categories}}">
+					{% if post.type contains "interne" %}
+					<a class="fresco" href="{{site.url}}/{{post.image}}" data-fresco-group="projects">
+						<img src="{{site.url}}/{{post.image}}" alt="{{post.title}}">
+					</a>
+					{%endif%}
+					{% if post.type contains "externe" %}
+					<a class="fresco" href="{{post.image}}" data-fresco-group="projects">
+						<img src="{{post.image}}" alt="{{post.title}}">
+					</a>
+					{%endif%}
+					<div class="gi-hover">
+						<img src="{{site.url}}/{{post.img_author}}" alt="{{post.title}}">
+						<h6>{{post.author}}</h6>
+					</div>
+				</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</section>
+	<!-- Gallery Section end -->

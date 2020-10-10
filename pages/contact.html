@@ -1,0 +1,36 @@
+---
+layout: default
+image: img/social.png
+title: Nous Contacter
+permalink: /contact/
+---
+
+	<!-- Contact Section end -->
+	<div class="contact-section">
+		<div class="map-warp"><iframe src="{{site.googlemap}}" style="border:0" allowfullscreen></iframe></div>
+		<div class="contact-box">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="contact-info">
+						<i class="ti-location-pin"></i>
+						<p>{{site.adresse}}<br>{{site.ville}}</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="contact-info">
+						<i class="ti-email"></i>
+						<p><span>Téléphone:</span> <a style="text-decoraction: none; color: #252525;" href="tel:{{site.phone}}">{{site.phone}}</a></p>
+						<p><span>Email:</span> <a style="text-decoraction: none; color: #252525;" href="mailto:{{site.email}}">{{site.email}}</a></p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="contact-info">
+						<i class="ti-timer"></i>
+						<p><span>Semaine:</span> {{site.semaine}}</p>
+						<p><span>Week End:</span> {{site.weekend}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact Section end -->

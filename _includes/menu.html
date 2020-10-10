@@ -1,0 +1,41 @@
+<div class="menu-wrapper">
+  <div class="menu-switch">
+    <i class="ti-menu"></i>
+  </div>
+  <div class="menu-social-warp">
+    <div class="menu-social">
+      <a href="https://facebook.com/{{site.facebook_username}}" target="_blank"><i class="ti-facebook"></i></a>
+      <a href="https://twitter.com/{{site.twitter_username}}" target="_blank"><i class="ti-twitter-alt"></i></a>
+      <a href="https://github.com/{{site.github_username}}" target="_blank"><i class="ti-github"></i></a>
+      <a href="https://instagram.com/{{site.instagram_username}}" target="_blank"><i class="ti-instagram"></i></a>
+    </div>
+  </div>
+</div>
+<div class="side-menu-wrapper">
+  <div class="sm-header">
+    <div class="menu-close">
+      <i class="ti-arrow-left"></i>
+    </div>
+    <a href="index.html" class="site-logo">
+      <img src="{{site.url}}/img/banner.png" alt="">
+    </a>
+  </div>
+  <nav class="main-menu">
+    <ul>
+      <li><a href="{{site.url}}" {% if page.url == '/' %}class="active"{%endif%}>Accueil</a></li>
+      <li><a href="{{site.url}}/about/" {% if page.url == '/about/' %}class="active"{%endif%}>À Propos</a></li>
+      <li><a href="{{site.url}}/gallery/" {% if page.url == '/gallery/' %}class="active"{%endif%}>Photos</a></li>
+      <li><a href="{{site.url}}/contact/" {% if page.url == '/contact/' %}class="active"{%endif%}>Contact</a></li>
+      <li><a href="{{site.url}}/legal/" {% if page.url == '/legal/' %}class="active"{%endif%}>Politiques</a></li>
+    </ul>
+  </nav>
+  <div class="sm-footer">
+    <div class="sm-socail">
+      <a href="https://facebook.com/{{site.facebook_username}}" target="_blank"><i class="ti-facebook"></i></a>
+      <a href="https://twitter.com/{{site.twitter_username}}" target="_blank"><i class="ti-twitter-alt"></i></a>
+      <a href="https://github.com/{{site.github_username}}" target="_blank"><i class="ti-github"></i></a>
+      <a href="https://instagram.com/{{site.instagram_username}}" target="_blank"><i class="ti-instagram"></i></a>
+    </div>
+    <div class="copyright-text"><p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Upbike - All rights reserved</p></div>
+  </div>
+</div>

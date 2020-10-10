@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  {% include head.html %}
+  </head>
+  <body>
+  {% include preloader.html %}
+
+  {% include menu.html %}
+
+  <!-- About Section end -->
+  <section class="about-section">
+    <div class="about-warp">
+      <div class="about-left">
+        <div class="about-img">
+          <img src="{{site.url}}/{{page.img_author}}" alt="{{page.author}}">
+        </div>
+        <div class="profile-text text-white">
+          <h2>Bonjour !</h2>
+          <h2>Je suis <strong>{{page.author}}</strong></h2>
+          <p>{{page.author_about}}</p>
+          <a href="{{page.site_url}}" target="_blank" class="profile-btn">{{page.site_name}}</a>
+          <a href="mailto:{{site.email}}" class="profile-email">{{site.email}}</a>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-text">
+          {{content}}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+  {% include script.html %}
+  </body>
+</html>
