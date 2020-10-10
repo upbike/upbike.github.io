@@ -484,13 +484,6 @@ ol {
 	height: 100%;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px),
-(max-width: 576px) {
-	.pana-accordion {
-		display: none;
-	}
-}
-
 .pana-accordion-item,
 .hero-item {
 	display: -webkit-box;
