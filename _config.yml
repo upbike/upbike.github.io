@@ -7,12 +7,12 @@ email: teeknoo@gmail.com
 phone: "+33 768360340"
 
 #uncomment pour l'utilisation en localhost
-baseurl: ""
-url: ""
-
-#uncomment pour l'utilisation sur github
 #baseurl: ""
 #url: ""
+
+#uncomment pour l'utilisation sur github
+baseurl: ""
+url: "https://upbike.github.io"
 
 #réseaux sociaux
 facebook_username:
